@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Concpetual\src\Composition\Contract;
+namespace Concpetual\Composition\Contract;
 
 use Concpetual;
 use SplObjectStorage;
