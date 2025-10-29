@@ -23,7 +23,7 @@ trait Composite
      * @return void
      * @throws Exception
      */
-    public function add(Conceptual\Composition\Contract\Component $component): void
+    public function add(Conceptual\Composition\Contract\Component $component): self
     {
         if ($this instanceof Conceptual\Composition\Contract\Composite === false) {
             throw new Exception("Invalid component");
@@ -31,6 +31,8 @@ trait Composite
 
         $this->children->attach($component);
         $component->setParent($this);
+
+        return $this;
     }
 
     /**
@@ -38,7 +40,7 @@ trait Composite
      * @return void
      * @throws Exception
      */
-    public function remove(Conceptual\Composition\Contract\Component $component): void
+    public function remove(Conceptual\Composition\Contract\Component $component): self
     {
         if ($this instanceof Conceptual\Composition\Contract\Composite === false) {
             throw new Exception("Invalid component");
@@ -46,6 +48,8 @@ trait Composite
 
         $this->children->detach($component);
         $component->setParent(null);
+
+        return $this;
     }
 
     /**
