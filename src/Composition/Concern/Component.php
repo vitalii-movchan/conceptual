@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Concpetual\Composition\Concern;
+namespace Conceptual\Composition\Concern;
 
-use Concpetual;
+use Conceptual;
 
 /**
  * Optionally, the base Component can declare an interface for setting and
@@ -14,23 +14,23 @@ use Concpetual;
 trait Component
 {
     /**
-     * @var Concpetual\Composition\Contract\Composite|null
+     * @var Conceptual\Composition\Contract\Composite|null
      */
-    private Concpetual\Composition\Contract\Composite|null $parent = null;
+    private Conceptual\Composition\Contract\Composite|null $parent = null;
 
     /**
-     * @param Concpetual\Composition\Contract\Composite|null $parent
+     * @param Conceptual\Composition\Contract\Composite|null $parent
      * @return void
      */
-    public function setParent(Concpetual\Composition\Contract\Composite|null $parent): void
+    public function setParent(Conceptual\Composition\Contract\Composite|null $parent): void
     {
         $this->parent = $parent;
     }
 
     /**
-     * @return Concpetual\Composition\Contract\Composite|null
+     * @return Conceptual\Composition\Contract\Composite|null
      */
-    public function getParent(): Concpetual\Composition\Contract\Composite|null
+    public function getParent(): Conceptual\Composition\Contract\Composite|null
     {
         return $this->parent;
     }

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Concpetual\Composition\Contract;
+namespace Conceptual\Composition\Contract;
 
-use Concpetual;
+use Conceptual;
 use SplObjectStorage;
 
 interface Composite

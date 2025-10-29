@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Concpetual\Composition\Concern;
+namespace Conceptual\Composition\Concern;
 
-use Concpetual;
+use Conceptual;
 use Exception;
 use SplObjectStorage;
 
@@ -19,13 +19,13 @@ trait Composite
     private SplObjectStorage $children;
 
     /**
-     * @param Concpetual\Composition\Contract\Component $component
+     * @param Conceptual\Composition\Contract\Component $component
      * @return void
      * @throws Exception
      */
-    public function add(Concpetual\Composition\Contract\Component $component): void
+    public function add(Conceptual\Composition\Contract\Component $component): void
     {
-        if ($this instanceof Concpetual\Composition\Contract\Composite === false) {
+        if ($this instanceof Conceptual\Composition\Contract\Composite === false) {
             throw new Exception("Invalid component");
         }
 
@@ -34,13 +34,13 @@ trait Composite
     }
 
     /**
-     * @param Concpetual\Composition\Contract\Component $component
+     * @param Conceptual\Composition\Contract\Component $component
      * @return void
      * @throws Exception
      */
-    public function remove(Concpetual\Composition\Contract\Component $component): void
+    public function remove(Conceptual\Composition\Contract\Component $component): void
     {
-        if ($this instanceof Concpetual\Composition\Contract\Composite === false) {
+        if ($this instanceof Conceptual\Composition\Contract\Composite === false) {
             throw new Exception("Invalid component");
         }
 

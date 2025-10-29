@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Concpetual\Composition\Contract;
+namespace Conceptual\Composition\Contract;
 
-use Concpetual;
+use Conceptual;
 
 interface Component
 {
     /**
-     * @param \Concpetual\Composition\Contract\Composite|null $parent
+     * @param Conceptual\Composition\Contract\Composite|null $parent
      * @return void
      */
-    public function setParent(Concpetual\Composition\Contract\Composite|null $parent): void;
+    public function setParent(Conceptual\Composition\Contract\Composite|null $parent): void;
 
     /**
-     * @return \Concpetual\Composition\Contract\Composite|null
+     * @return Conceptual\Composition\Contract\Composite|null
      */
-    public function getParent(): Concpetual\Composition\Contract\Composite|null;
+    public function getParent(): Conceptual\Composition\Contract\Composite|null;
 }
