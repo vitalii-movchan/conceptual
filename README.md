@@ -1,5 +1,5 @@
 # conceptual
 
-design patterns
+Design Patterns
 
 https://refactoring.guru/
